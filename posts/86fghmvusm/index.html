@@ -7,7 +7,7 @@
 <title>Hugo + AsciidocでGitHub Pages上にブログを公開するまで その2 - DeanKHの日記</title>
 <meta name=description content="はじめに 前回の続きです． 前回はHugoの導入と静的サイトの生成方法まで書きました． 今回はHugoで生成した静的サイトをGitHub Actions [1] を使用">
 <meta name=author content="deankh"><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","name":"DeanKHの日記","url":"https:\/\/deankh.github.io\/blog"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Organization","name":"","url":"https:\/\/deankh.github.io\/blog"}</script>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/deankh.github.io\/blog","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/deankh.github.io\/blog\/posts\/86fghmvusm\/","name":"Hugo asciidocで git hub pages上にブログを公開するまで その2"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"deankh"},"headline":"Hugo \u002b AsciidocでGitHub Pages上にブログを公開するまで その2","description":"はじめに 前回の続きです． 前回はHugoの導入と静的サイトの生成方法まで書きました． 今回はHugoで生成した静的サイトをGitHub Actions [1] を使用","inLanguage":"ja","wordCount":1053,"datePublished":"2020-11-30T23:54:44","dateModified":"2020-11-30T23:54:44","image":"https:\/\/avatars2.githubusercontent.com\/u\/12647494?s=400\u0026v=4","keywords":["markup, blog"],"mainEntityOfPage":"https:\/\/deankh.github.io\/blog\/posts\/86fghmvusm\/","publisher":{"@type":"Organization","name":"https:\/\/deankh.github.io\/blog","logo":{"@type":"ImageObject","url":"https:\/\/avatars2.githubusercontent.com\/u\/12647494?s=400\u0026v=4","height":60,"width":60}}}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/deankh.github.io\/blog","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/deankh.github.io\/blog\/posts\/86fghmvusm\/","name":"Hugo asciidocで git hub pages上にブログを公開するまで その2"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"deankh"},"headline":"Hugo \u002b AsciidocでGitHub Pages上にブログを公開するまで その2","description":"はじめに 前回の続きです． 前回はHugoの導入と静的サイトの生成方法まで書きました． 今回はHugoで生成した静的サイトをGitHub Actions [1] を使用","inLanguage":"ja","wordCount":1020,"datePublished":"2020-11-30T23:54:44","dateModified":"2020-11-30T23:54:44","image":"https:\/\/avatars2.githubusercontent.com\/u\/12647494?s=400\u0026v=4","keywords":["markup, blog"],"mainEntityOfPage":"https:\/\/deankh.github.io\/blog\/posts\/86fghmvusm\/","publisher":{"@type":"Organization","name":"https:\/\/deankh.github.io\/blog","logo":{"@type":"ImageObject","url":"https:\/\/avatars2.githubusercontent.com\/u\/12647494?s=400\u0026v=4","height":60,"width":60}}}</script>
 <meta property="og:title" content="Hugo + AsciidocでGitHub Pages上にブログを公開するまで その2">
 <meta property="og:description" content="はじめに 前回の続きです． 前回はHugoの導入と静的サイトの生成方法まで書きました． 今回はHugoで生成した静的サイトをGitHub Actions [1] を使用">
 <meta property="og:image" content="https://avatars2.githubusercontent.com/u/12647494?s=400&v=4">
@@ -173,40 +173,7 @@
 </div>
 <div class=listingblock>
 <div class=content>
-<pre class="rouge highlight"><code data-lang=yaml><table class=linenotable><tbody><tr><td class="linenos gl"><pre class=lineno> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-</pre></td><td class=code><pre><span class=na>name</span><span class=pi>:</span> <span class=s>deploy github pages</span>
+<pre class="rouge highlight"><code data-lang=yaml><span class=na>name</span><span class=pi>:</span> <span class=s>deploy github pages</span>
 
 <span class=na>on</span><span class=pi>:</span>
   <span class=na>push</span><span class=pi>:</span>
@@ -238,8 +205,7 @@
           <span class=na>personal_token</span><span class=pi>:</span> <span class=s>${{ secrets.PERSONAL_TOKEN }}</span>
           <span class=na>external_repository</span><span class=pi>:</span> <span class=s>deankh/blog</span>
           <span class=na>publish_branch</span><span class=pi>:</span> <span class=s>master</span>
-          <span class=na>publish_dir</span><span class=pi>:</span> <span class=s>./public</span>
-</pre></td></tr></tbody></table></code></pre>
+          <span class=na>publish_dir</span><span class=pi>:</span> <span class=s>./public</span></code></pre>
 </div>
 </div>
 </li>
