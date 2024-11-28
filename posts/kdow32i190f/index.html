@@ -4,10 +4,9 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1">
 <meta name=google-site-verification content="JPRYyFOZXKNxSGtffI0qcFDVMF_E9dJeDj1LiUy_uU4">
-<title>Hugo+AsciidoctorのDocker環境を整える - DeanKHの日記</title>
-<meta name=description content="はじめに 4年ぶりにブログを書きます． すべてを忘れてしまったので，昔の記事を頼りにHugo+Asciidocの環境を整えます． 環境構築 Hugo">
-<meta name=author content="deankh"><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","name":"DeanKHの日記","url":"https:\/\/deankh.github.io\/blog"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Organization","name":"","url":"https:\/\/deankh.github.io\/blog"}</script>
-<script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/deankh.github.io\/blog","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/deankh.github.io\/blog\/posts\/kdow32i190f\/","name":"Hugo asciidoctorの docker環境を整える"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":"deankh"},"headline":"Hugo\u002bAsciidoctorのDocker環境を整える","description":"はじめに 4年ぶりにブログを書きます． すべてを忘れてしまったので，昔の記事を頼りにHugo\u002bAsciidocの環境を整えます． 環境構築 Hugo","inLanguage":"ja","wordCount":548,"datePublished":"2024-11-26T15:39:56","dateModified":"2024-11-26T15:39:56","image":"https:\/\/avatars2.githubusercontent.com\/u\/12647494?s=400\u0026v=4","keywords":["markup, blog, docker"],"mainEntityOfPage":"https:\/\/deankh.github.io\/blog\/posts\/kdow32i190f\/","publisher":{"@type":"Organization","name":"https:\/\/deankh.github.io\/blog","logo":{"@type":"ImageObject","url":"https:\/\/avatars2.githubusercontent.com\/u\/12647494?s=400\u0026v=4","height":60,"width":60}}}</script>
+<title>Hugo+AsciidoctorのDocker環境を整える - </title>
+<meta name=description content="はじめに 4年ぶりにブログを書きます． すべてを忘れてしまったので，昔の記事を頼りにHugo+Asciidocの環境を整えます． 環境構築 Hugo"><script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","name":"DeanKHの日記","url":"https:\/\/deankh.github.io\/blog"}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Organization","name":"","url":"https:\/\/deankh.github.io\/blog"}</script>
+<script type=application/ld+json>{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/deankh.github.io\/blog","name":"home"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/deankh.github.io\/blog\/posts\/kdow32i190f\/","name":"Hugo asciidoctorの docker環境を整える"}}]}</script><script type=application/ld+json>{"@context":"http://schema.org","@type":"Article","author":{"name":""},"headline":"Hugo\u002bAsciidoctorのDocker環境を整える","description":"はじめに 4年ぶりにブログを書きます． すべてを忘れてしまったので，昔の記事を頼りにHugo\u002bAsciidocの環境を整えます． 環境構築 Hugo","inLanguage":"ja","wordCount":548,"datePublished":"2024-11-26T15:39:56\u002b00:00","dateModified":"2024-11-26T15:39:56\u002b00:00","image":"https:\/\/avatars2.githubusercontent.com\/u\/12647494?s=400\u0026v=4","keywords":["markup, blog, docker"],"mainEntityOfPage":"https:\/\/deankh.github.io\/blog\/posts\/kdow32i190f\/","publisher":{"@type":"Organization","name":"https:\/\/deankh.github.io\/blog","logo":{"@type":"ImageObject","url":"https:\/\/avatars2.githubusercontent.com\/u\/12647494?s=400\u0026v=4","height":60,"width":60}}}</script>
 <meta property="og:title" content="Hugo+AsciidoctorのDocker環境を整える">
 <meta property="og:description" content="はじめに 4年ぶりにブログを書きます． すべてを忘れてしまったので，昔の記事を頼りにHugo+Asciidocの環境を整えます． 環境構築 Hugo">
 <meta property="og:image" content="https://avatars2.githubusercontent.com/u/12647494?s=400&v=4">
@@ -17,11 +16,11 @@
 <meta name=twitter:title content="Hugo+AsciidoctorのDocker環境を整える">
 <meta name=twitter:description content="はじめに 4年ぶりにブログを書きます． すべてを忘れてしまったので，昔の記事を頼りにHugo+Asciidocの環境を整えます． 環境構築 Hugo">
 <meta name=twitter:image content="https://avatars2.githubusercontent.com/u/12647494?s=400&v=4">
-<meta name=twitter:card content="summary">
+<meta name=twitter:card content="summary_large_image">
 <meta name=generator content="Hugo 0.92.2">
-<link rel=alternate href=https://deankh.github.io/blog/index.xml type=application/rss+xml title=DeanKHの日記><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css integrity=sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y crossorigin=anonymous>
-<link rel=stylesheet href=https://use.fontawesome.com/releases/v5.5.0/css/all.css integrity=sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU crossorigin=anonymous>
-<link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css integrity=sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u crossorigin=anonymous><link rel=stylesheet href=https://deankh.github.io/blog/css/main.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+<link rel=alternate href=https://deankh.github.io/blog/index.xml type=application/rss+xml title=DeanKHの日記><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous>
+<link rel=stylesheet href=https://use.fontawesome.com/releases/v6.6.0/css/all.css integrity=sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT crossorigin=anonymous>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css integrity=sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu crossorigin=anonymous><link rel=stylesheet href=https://deankh.github.io/blog/css/main.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"><link rel=stylesheet href=https://deankh.github.io/blog/css/syntax.css><link rel=stylesheet href=https://deankh.github.io/blog/css/codeblock.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css integrity=sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh crossorigin=anonymous>
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css integrity=sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R crossorigin=anonymous>
 </head>
@@ -310,19 +309,8 @@ Hugoのrootディレクトリ下の変更を監視しているため，保存す
 <div class=row>
 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 <ul class="list-inline text-center footer-links">
-<li>
-<a href=https://github.com/deankh title=GitHub>
-<span class="fa-stack fa-lg">
-<i class="fas fa-circle fa-stack-2x"></i>
-<i class="fab fa-github fa-stack-1x fa-inverse"></i>
-</span>
-</a>
-</li>
 </ul>
 <p class="credits copyright text-muted">
-deankh
-&nbsp;&bull;&nbsp;&copy;
-2024
 &nbsp;&bull;&nbsp;
 <a href=https://deankh.github.io/blog>DeanKHの日記</a>
 </p>
@@ -332,11 +320,11 @@ deankh
 </div>
 </div>
 </div>
-</footer><script src=https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js integrity=sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx crossorigin=anonymous></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js integrity=sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe crossorigin=anonymous></script>
-<script src=https://code.jquery.com/jquery-1.12.4.min.js integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin=anonymous></script>
-<script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js integrity=sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa crossorigin=anonymous></script>
-<script src=https://deankh.github.io/blog/js/main.js></script><script>renderMathInElement(document.body)</script><script src=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js integrity=sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy crossorigin=anonymous></script>
+</footer><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous onload=renderMathInElement(document.body)></script>
+<script src=https://code.jquery.com/jquery-3.7.0.slim.min.js integrity=sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js integrity=sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd crossorigin=anonymous></script>
+<script src=https://deankh.github.io/blog/js/main.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js integrity=sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy crossorigin=anonymous></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js integrity=sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q crossorigin=anonymous></script><script src=https://deankh.github.io/blog/js/load-photoswipe.js></script>
 </body>
 </html>
